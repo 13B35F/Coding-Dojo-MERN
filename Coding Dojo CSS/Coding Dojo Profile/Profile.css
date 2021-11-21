@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-style: normal;
+    }
+a {text-decoration: none;
+    }
+.nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%; 
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    }
+.nav-title {
+    padding: 20px;
+    /* align-items: flex-start; */
+    justify-content: center;
+    }
+.nav-links li {
+    display: inline-block ;
+    padding-left: 20px;
+    padding-right: 10px;
+    }
+.active {
+    font-weight: bolder;
+    }
+#navcol2{
+        display: flex;
+        justify-content: right;
+        color: blue;
+    }
+#sign {
+    color: blue;
+    font-style: bolder;
+}

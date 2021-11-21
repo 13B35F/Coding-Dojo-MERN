@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <header class="nav-top">
+          <div class="nav-top-title">
+            <h2><img src="./heart-light.png" /> Pet Shelter</h2>
+          </div>
+          <div class="nav-top-menu">
+            <p>Find a Pet</p>
+            <p>About</p>
+            <p><button id="donate">Donate</button></p>
+          </div>
+        </header>
+        <nav class="nav-bottom">
+          <div class="nav-bottom-a-1">
+            <p>I'm lookning for a...</p>
+            <section class="nav-bottom-user-input">
+              <label class="nav-pictures"><img src="./paw-light.png" /></label>
+              <select onchange="pet(this)">
+                <option>Any Pet</option>
+                <option>Cat</option>
+                <option>Dog</option>
+              </select>
+              <!-- <select name="pet">
+                <option>Any Pet</option>
+                <option>Cat</option>
+                <option>Dog</option>
+              </select> -->
+            </section>
+          </div>
+          <div class="nav-bottom-a-1">
+            <p>In or near...</p>
+            <section class="nav-bottom-user-input">
+              <label class="nav-pictures"><img src="./pin-light.png" /></label>
+              <input
+                type="text"
+                name="location"
+                placeholder="City or Zip Code"
+              />
+            </section>
+          </div>
+          <div class="nav-bottom-a-1">
+            <button>Find your best new friend</button>
+          </div>
+        </nav>
+      </div>
+      <div class="pet-cards">
+        <div class="pet-card">
+          <div>
+            <img class="pet-pictures" src="./pepper.jpg" />
+          </div>
+          <div class="pet-information">
+            <h2>Pepper</h2>
+            <p>
+              Pepper is a slightly shy gre tabby, but she really loves showing
+              her human affection.
+            </p>
+          </div>
+          <div id="petting-counter1">
+            <p><span id="count1">0</span> petting(s)</p>
+            <p><button id="1" class="Petting">Pet Pepper</button></p>
+          </div>
+        </div>
+        <div class="pet-card">
+          <div>
+            <img class="pet-pictures" src="./bruce.jpg" />
+          </div>
+          <div class="pet-information">
+            <h2>Bruce</h2>
+            <p>
+              Bruce is a loyal companion. He loves long walks and cold weather.
+            </p>
+          </div>
+          <div id="petting-counter2">
+            <p><span id="count2">0</span> petting(s)</p>
+            <p><button id="2" class="Petting">Pet Bruce</button></p>
+          </div>
+        </div>
+        <div class="pet-card">
+            <div>
+              <img class="pet-pictures" src="./oscar.jpg" />
+            </div>
+            <div class="pet-information">
+              <h2>Oscar</h2>
+              <p>
+                Oscar is bright, energetic and friendly. He is looking for a good home.
+              </p>
+            </div>
+            <div id="petting-counter3">
+              <p><span id="count3">0</span> petting(s)</p>
+              <p><button id="3" class="Petting">Pet Oscar</button></p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

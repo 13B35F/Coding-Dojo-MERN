@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding:0px;
+    }
+.top-nav {
+    color: white;
+    background-color: black;
+    margin: 0% 20%;
+    padding: 10px 20px;
+    }
+
+.bot-nav {
+    text-align: center;
+    }
+    
+
+.profile {
+    margin: 10px;
+    border: solid black 2px;
+    width: 130px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    }
+.profile-pic {
+    width: 100px;
+    border-radius: 50px;
+    }
+.blue-text {
+    text-decoration: underline;
+    color: blue;
+    }
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    /* 이거 맞나요? */
+    margin: 15px;
+    }
+
+.usercard {
+    display: inline-flex;
+    border: solid 2px black;
+    /* width: 90px; */
+    /* flex-direction: column; */
+    }
+
+.user-information {
+    display: flex;
+    }
+
+#like-counter1,#like-counter2, #like-counter3 {
+    display: flex;
+    justify-content: space-evenly;
+    }

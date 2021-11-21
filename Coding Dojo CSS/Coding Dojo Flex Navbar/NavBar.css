@@ -1,0 +1,33 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    }
+
+.nav {
+    width: 90%; 
+    color: white;
+    background: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.nav-title {
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: left;
+    }
+.nav-links li {
+    display: inline-block ;
+    padding-left: 20px;
+    padding-right: 10px;
+    justify-content: right;
+    }
+/* .active {
+    ;
+    } */
+.btn {
+    box-shadow: 10px 5px 5px red;
+    background: darkgray;
+}

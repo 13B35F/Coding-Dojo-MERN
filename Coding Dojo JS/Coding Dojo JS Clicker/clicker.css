@@ -1,0 +1,86 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    }
+
+.nav{
+    background: darkgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    }
+    
+.nav-title{
+    color: black;
+    font-display: bolder;
+    margin: 20px;
+    }
+#btn{
+    box-shadow: 10px 5px 5px black;
+    background: blue;
+    padding: 5px 8px;
+    font-display: bolder;
+    width: 75px;
+    color: white;
+    }
+#searchbox{
+    height: 25px;
+    border: solid black;
+    width: 500px;
+    }
+.ninja-cards{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    }
+.ninja-card-1, .ninja-card-2{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    border: solid black;
+    
+    }
+.ninja-card-word{
+    display: flex;
+    flex-direction: column;
+    }
+
+#like1{
+    box-shadow: 10px 5px 5px black;
+    background-color: yellow;
+    padding: 3px 10px;
+    margin: 15px;
+    }
+#like2{
+    box-shadow: 10px 5px 5px black;
+    background-color: yellow;
+    padding: 3px 10px;
+    margin: 15px;   
+    }
+.ninja-card-def{
+    display: flex;
+    margin: 15px 10px;
+    padding: 20px 30px;
+    align-items: center;
+    }
+
+.dojonary{
+    display: flex;
+    vertical-align: top;
+    border: solid black 3px;
+    width: 18%;
+    flex: 1;
+    }
+.text-blue{
+    color: black;
+    font-display: bolder;
+    }
+.text-blue{
+    color: blue;
+    text-decoration: underline;
+    }

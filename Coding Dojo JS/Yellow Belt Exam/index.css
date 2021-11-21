@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+:root {
+    --global-padding: 5px 10%;
+    --image-size: 25px;
+    --image-profile: 100px;
+  }
+  
+.container {
+    display: flex; 
+    flex-direction: column;
+  }
+  
+.nav {
+    background-color: grey;
+    color: white;
+    padding: var(--global-padding);
+  }
+  
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+#donate {
+    color: blue;
+    border: solid blue 1px;
+    border-radius: 50px;
+    width: 75px;
+}
+.nav-top > .nav-top-title > h2 {
+    display: flex;
+    align-items: center;
+  }
+  
+.nav-top-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+  }
+  
+.nav-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+.nav-bottom-a-1 {
+    padding: 10px;
+  }
+  
+.nav-bottom-user-input {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  
+.nav-bottom-user-input > select,
+.nav-bottom-user-input > input {
+    min-width: 100px;
+  }
+  
+.nav-pictures > img {
+    width: var(--image-size);
+  }
+
+.nav-bottom-a-1 > button {
+    height: var(--image-size);
+    color: white;
+    background-color: blue;
+    box-shadow: blue 5px 3px ;
+  }
+
+.pet-cards{
+    padding: var(--global-padding);
+    display: flex;
+    flex-direction: column;
+    }
+
+.pet-card{
+    display: flex;
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    /* justify-content: space-evenly; */
+    }
+
+.pet-pictures{
+    width: var(--image-profile);
+    }
+    
+.pet-information{
+    padding: 10px;
+    flex: 2;
+    word-wrap: break-word;
+    } 
+    
+.Petting{
+  color: white;
+  background-color: lightskyblue;
+  width: 150px;
+  }
+  
+#petting-counter1{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  }

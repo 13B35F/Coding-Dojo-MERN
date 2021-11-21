@@ -1,0 +1,28 @@
+h1{
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+}
+.container{
+    width: 700px;
+    background: skyblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxtwo{
+    margin-top: 10px;
+    width: 700px;
+    background: pink;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxthree{
+    width: 700px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
