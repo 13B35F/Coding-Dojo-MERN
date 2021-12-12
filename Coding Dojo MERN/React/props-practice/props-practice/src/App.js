@@ -1,7 +1,10 @@
 import './App.css';
 import PersonCard from './components/PersonCard';
+import React, { useState } from 'react';
 
 function App() {
+
+  
   return (
     <div className="App">
       <PersonCard firstName={ "Jane" } lastName={ "Doe" } 

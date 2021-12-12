@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 
@@ -6,13 +6,18 @@ import React from 'react'
 const PersonCard = (props) => {
 
     const {firstName, lastName, age, hairColor} = props;
-
+    const [currentAge, setCurrentAge] = useState(props.age);
+    const addAge = ()=> {
+        setCurrentAge(currentAge + "1")
+    }
     return(
         
     
         <div>
             <p>{lastName}, {firstName}</p>
-            <p>{age}</p>
+            <p>{currentAge}</p>
+            {/* <button onClick={()=>{ setCurrentAge(setCurrentAge + 1)}}>Birthday</button> */}
+            <button onClick={()=>{setCurrentAge(currentAge + 1)}}> Birthday Button for {firstName} {lastName} </button> 
             <p>{hairColor}</p>
         </div>
     )
