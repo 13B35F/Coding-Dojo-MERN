@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="App">
       <PersonCard firstName={ "Jane" } lastName={ "Doe" } 
-      age={ "Age: 45" } hairColor={ "Hair Color: Black" }/> 
+      age={ 45 } hairColor={ "Black" }/> 
       <PersonCard firstName={ "John" } lastName={ "Smith" } 
-      age={ "Age: 88" } hairColor={ "Hair Color: Brown" }/> 
+      age={ 88 } hairColor={ "Brown" }/> 
       <PersonCard firstName={ "Millard" } lastName={ "Fillmore" } 
-      age={ "Age: 50" } hairColor={ "Hair Color: Brown" }/> 
+      age={ 50 } hairColor={ "Brown" }/> 
       <PersonCard firstName={ "Maria" } lastName={ "Smith" } 
-      age={ "Age: 62" } hairColor={ "Hair Color: Brown" }/> 
+      age={ 62 } hairColor={ "Brown" }/> 
       {/* this line is to import PersonCard component to App.js */}
     </div>
   );
