@@ -1,5 +1,9 @@
 import React, { useState } from  'react';
     
+const isValidLength = (value, minLength) => {
+  return value.length >= minLength;
+}
+
 const Form = (props) => {
     const [ firstName, setFirstName ] = useState("");
     const [ lastName, setLastName ] = useState("");
@@ -17,11 +21,9 @@ const Form = (props) => {
                 name="firstName"
                 onChange={ (e) => setFirstName(e.target.value) }/>
             {
-            firstName.length > 0 ?
-            firstName.length < 2 ?
-            <p className="error">First Name must be at least 2 characters</p>
-            : null
-            : null 
+              isValidLength(firstName, 2) ? 
+              null : 
+              <p className="error">First Name must be at least 2 characters</p>
             }
         </div>
 
@@ -32,12 +34,11 @@ const Form = (props) => {
                 name="lastName" 
                 onChange={ (e) => setLastName(e.target.value) }/>
             {
-            lastName.length > 0 ?
-            lastName.length < 2 ?
+            isValidLength(lastName, 2) ? 
+            null : 
             <p className="error">Last Name must be at least 2 characters</p>
-            : null
-            : null 
             }
+          
         </div>
 
         <div>
@@ -47,11 +48,9 @@ const Form = (props) => {
                 name="email" 
                 onChange={ (e) => setEmail(e.target.value) }/>
             {
-            email.length > 0 ?
-            email.length < 5 ?
+            isValidLength(email, 5) ? 
+            null : 
             <p className="error">Email must be at least 5 characters</p>
-            : null
-            : null 
             }
         </div>
         <div>
@@ -61,11 +60,9 @@ const Form = (props) => {
                 name="password" 
                 onChange={ (e) => setPassword(e.target.value) }/>
             {
-            password.length > 0 ?
-            password.length < 8 ?
+            isValidLength(email, 8) ? 
+            null : 
             <p className="error">Password must be at least 8 characters</p>
-            : null
-            : null 
             }
             {
             password.length >= 8 && confirmPassword.length > 0 ?
